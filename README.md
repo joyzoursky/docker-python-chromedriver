@@ -34,4 +34,4 @@ $ export DISPLAY=:0
 $ python your_selenium_test.py
 ```
 
-You may download a selenium test example from [here](https://gitlab.com/joyzoursky/selenium-template/tree/master) to quick start.
+You may download a selenium test example from [here](https://github.com/joyzoursky/selenium-template) to quick start.
