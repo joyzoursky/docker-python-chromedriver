@@ -29,9 +29,7 @@ Then run the commands in this bash as in your working directory.
 
 ```
 $ pip install -r requirements.txt
-$ Xvfb :0 -ac -screen 0 1024x768x24 &
-$ export DISPLAY=:0
-$ python your_selenium_test.py
+$ xvfb-run --server-args="-screen 0 1024x768x24" python your_selenium_test.py
 ```
 
 You may download a selenium test example from [here](https://github.com/joyzoursky/selenium-template) to quick start.
