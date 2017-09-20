@@ -12,6 +12,8 @@ Python with Chrome driver, for running automated tests
 
  - 2.7 - based on Python 2.7
  - 3.6 - based on Python 3.6
+ - 2.7-xvfb - based on Python 2.7 with xvfb installed
+ - 3.6-xvfb - based on Python 3.6 with xvfb installed
  - latest (default version, same as 3.6)
 
 ### Usage:
