@@ -44,7 +44,8 @@ For the following alpine based images:
 - `3.6-alpine3.7-selenium`
 - `2.7-alpine3.7`
 - `2.7-alpine3.7-selenium`
-run the followings in your terminal:
+
+Run the followings in your terminal:
 
 ```
 $ cd [your working directory]
@@ -63,7 +64,8 @@ For the following ubuntu based images:
 - `2.7-selenium`
 - `2.7-xvfb`
 - `2.7-xvfb-selenium`
-run the followings in your terminal:
+
+Run the followings in your terminal:
 
 ```
 $ cd [your working directory]
@@ -75,7 +77,7 @@ This will create a container from the image. Then you could starting running the
 
 ## Examples to run selenium test in the container:
 
-You can download a selenium test example from [here](https://github.com/joyzoursky/selenium-template) to quick start.
+You can download a selenium test example from [here](https://github.com/joyzoursky/docker-python-chromedriver/blob/master/test_script.py) to quick start.
 
 For the following images with selenium pre-installed:
 - `3.7-alpine3.8-selenium`
@@ -84,7 +86,8 @@ For the following images with selenium pre-installed:
 - `3.6-selenium`
 - `2.7-alpine3.7-selenium`
 - `2.7-selenium`
-you may run:
+
+You may run:
 
 ```
 # python test_script.py
@@ -98,14 +101,15 @@ For the following images that do not have selenium pre-installed:
 - `3.6`
 - `2.7-alpine3.7`
 - `2.7`
-you may run:
+
+You may run:
 
 ```
 # pip install selenium==3.13.0
 # python test_script.py
 ```
 
-*Don't install selenium version 3.8.1 to avoid the runtime error `ConnectionResetError: [Errno 104] Connection reset by peer`.*
+*If you see the runtime error `ConnectionResetError: [Errno 104] Connection reset by peer`, revert your selenium version to 3.8.0.*
 
 For `3.6-xvfb` or `2.7-xvfb`, you may run:
 
