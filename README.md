@@ -14,6 +14,10 @@ Python with Chromedriver, for running automated tests
 
 ### Python 3:
 
+ - `3.7-alpine3.8`, `latest` (based on python:3.7-alpine3.8, [Dockerfile](https://github.com/joyzoursky/docker-python-chromedriver/blob/master/py3/py3.7-alpine3.8/Dockerfile))
+ - `3.7-alpine3.8-selenium` (based on python:3.7-alpine3.8 with selenium installed, [Dockerfile](https://github.com/joyzoursky/docker-python-chromedriver/blob/master/py3/py3.7-alpine3.8-selenium/Dockerfile))
+ - `3.7` (based on python:3.7, [Dockerfile](https://github.com/joyzoursky/docker-python-chromedriver/blob/master/py3/py3.7/Dockerfile))
+ - `3.7-selenium` (based on python:3.7 with selenium installed, [Dockerfile](https://github.com/joyzoursky/docker-python-chromedriver/blob/master/py3/py3.7-selenium/Dockerfile))
  - `3.6-alpine3.7`, `latest` (based on python:3.6-alpine3.7, [Dockerfile](https://github.com/joyzoursky/docker-python-chromedriver/blob/master/py3/py3.6-alpine3.7/Dockerfile))
  - `3.6-alpine3.7-selenium` (based on python:3.6-alpine3.7 with selenium installed, [Dockerfile](https://github.com/joyzoursky/docker-python-chromedriver/blob/master/py3/py3.6-alpine3.7-selenium/Dockerfile))
  - `3.6` (based on python:3.6, [Dockerfile](https://github.com/joyzoursky/docker-python-chromedriver/blob/master/py3/py3.6/Dockerfile))
@@ -32,7 +36,15 @@ Python with Chromedriver, for running automated tests
 
 ## Usage:
 
-For `latest`, `3.6-alpine3.7`, `3.6-alpine3.7-selenium`, `2.7-alpine3.7` or `2.7-alpine3.7-selenium`, run the followings in your terminal:
+For the following alpine based images:
+- `latest`
+- `3.7-alpine3.8`
+- `3.7-alpine3.8-selenium`
+- `3.6-alpine3.7`
+- `3.6-alpine3.7-selenium`
+- `2.7-alpine3.7`
+- `2.7-alpine3.7-selenium`
+run the followings in your terminal:
 
 ```
 $ cd [your working directory]
@@ -40,7 +52,18 @@ $ docker run -it -v $(pwd):/usr/workspace joyzoursky/python-chromedriver:[versio
 / # cd /usr/workspace
 ```
 
-For `3.6`, `3.6-selenium`, `3.6-xvfb`, `3.6-xvfb-selenium`, `2.7`, `2.7-selenium`, `2.7-xvfb` or `2.7-xvfb-selenium`, run the followings in your terminal:
+For the following ubuntu based images:
+- `3.7`
+- `3.7-selenium`
+- `3.6`
+- `3.6-selenium`
+- `3.6-xvfb`
+- `3.6-xvfb-selenium`
+- `2.7`
+- `2.7-selenium`
+- `2.7-xvfb`
+- `2.7-xvfb-selenium`
+run the followings in your terminal:
 
 ```
 $ cd [your working directory]
@@ -54,20 +77,35 @@ This will create a container from the image. Then you could starting running the
 
 You can download a selenium test example from [here](https://github.com/joyzoursky/selenium-template) to quick start.
 
-For `3.6-alpine3.7-selenium`, `3.6-selenium`, `2.7-alpine3.7-selenium` or `2.7-selenium`, you may run:
+For the following images with selenium pre-installed:
+- `3.7-alpine3.8-selenium`
+- `3.7-selenium`
+- `3.6-alpine3.7-selenium`
+- `3.6-selenium`
+- `2.7-alpine3.7-selenium`
+- `2.7-selenium`
+you may run:
 
 ```
 # python test_script.py
 ```
 
-For `latest`, `3.6-alpine3.7`, `3.6`, `2.7-alpine3.7` or `2.7`, you may run:
+For the following images that do not have selenium pre-installed:
+- `latest`
+- `3.7-alpine3.8`
+- `3.7`
+- `3.6-alpine3.7`
+- `3.6`
+- `2.7-alpine3.7`
+- `2.7`
+you may run:
 
 ```
-# pip install selenium==3.8.0
+# pip install selenium==3.13.0
 # python test_script.py
 ```
 
-*We use selenium version 3.8.0 here to avoid the error `ConnectionResetError: [Errno 104] Connection reset by peer` in latest (3.8.1) version.*
+*Don't install selenium version 3.8.1 to avoid the runtime error `ConnectionResetError: [Errno 104] Connection reset by peer`.*
 
 For `3.6-xvfb` or `2.7-xvfb`, you may run:
 
