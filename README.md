@@ -18,7 +18,7 @@ Python with Chromedriver, for running automated tests
  - `3.7-alpine3.8-selenium` (based on python:3.7-alpine3.8 with selenium installed, [Dockerfile](https://github.com/joyzoursky/docker-python-chromedriver/blob/master/py3/py3.7-alpine3.8-selenium/Dockerfile))
  - `3.7` (based on python:3.7, [Dockerfile](https://github.com/joyzoursky/docker-python-chromedriver/blob/master/py3/py3.7/Dockerfile))
  - `3.7-selenium` (based on python:3.7 with selenium installed, [Dockerfile](https://github.com/joyzoursky/docker-python-chromedriver/blob/master/py3/py3.7-selenium/Dockerfile))
- - `3.6-alpine3.7`, `latest` (based on python:3.6-alpine3.7, [Dockerfile](https://github.com/joyzoursky/docker-python-chromedriver/blob/master/py3/py3.6-alpine3.7/Dockerfile))
+ - `3.6-alpine3.7` (based on python:3.6-alpine3.7, [Dockerfile](https://github.com/joyzoursky/docker-python-chromedriver/blob/master/py3/py3.6-alpine3.7/Dockerfile))
  - `3.6-alpine3.7-selenium` (based on python:3.6-alpine3.7 with selenium installed, [Dockerfile](https://github.com/joyzoursky/docker-python-chromedriver/blob/master/py3/py3.6-alpine3.7-selenium/Dockerfile))
  - `3.6` (based on python:3.6, [Dockerfile](https://github.com/joyzoursky/docker-python-chromedriver/blob/master/py3/py3.6/Dockerfile))
  - `3.6-selenium` (based on python:3.6 with selenium installed, [Dockerfile](https://github.com/joyzoursky/docker-python-chromedriver/blob/master/py3/py3.6-selenium/Dockerfile))
