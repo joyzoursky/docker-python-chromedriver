@@ -49,8 +49,7 @@ Run the followings in your terminal:
 
 ```
 $ cd [your working directory]
-$ docker run -it -v $(pwd):/usr/workspace joyzoursky/python-chromedriver:[version] sh
-/ # cd /usr/workspace
+$ docker run -it -w /usr/workspace -v $(pwd):/usr/workspace joyzoursky/python-chromedriver:[version] sh
 ```
 
 For the following ubuntu based images:
