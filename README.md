@@ -103,16 +103,14 @@ For the following images that do not have selenium pre-installed:
 You may run:
 
 ```
-# pip install selenium==3.13.0
+# pip install selenium
 # python test_script.py
 ```
-
-*If you see the runtime error `ConnectionResetError: [Errno 104] Connection reset by peer`, revert your selenium version to 3.8.0.*
 
 For `3.6-xvfb` or `2.7-xvfb`, you may run:
 
 ```
-# pip install selenium==3.8.0
+# pip install selenium
 # xvfb-run --server-args="-screen 0 1024x768x24" python test_script.py
 ```
 

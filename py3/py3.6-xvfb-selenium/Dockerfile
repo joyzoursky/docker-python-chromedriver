@@ -18,5 +18,8 @@ RUN apt-get install -yqq xvfb
 ENV DISPLAY=:99
 ENV DBUS_SESSION_BUS_ADDRESS=/dev/null
 
+# upgrade pip
+RUN pip install --upgrade pip
+
 # install selenium
-RUN pip install selenium==3.8.0
+RUN pip install selenium

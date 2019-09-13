@@ -14,5 +14,8 @@ RUN unzip /tmp/chromedriver.zip chromedriver -d /usr/local/bin/
 # set display port to avoid crash
 ENV DISPLAY=:99
 
+# upgrade pip
+RUN pip install --upgrade pip
+
 # install selenium
-RUN pip install selenium==3.8.0
+RUN pip install selenium
