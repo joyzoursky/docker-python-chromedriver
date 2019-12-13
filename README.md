@@ -23,7 +23,10 @@ $ docker run -it -w /usr/workspace -v $(pwd):/usr/workspace joyzoursky/python-ch
 ## Versions:
 
 ### Python 3:
-
+ - `3.8`, `latest` (based on python:3.8, [Dockerfile](https://github.com/joyzoursky/docker-python-chromedriver/blob/master/py3/py3.8/Dockerfile))
+ - `3.8-selenium` (based on python:3.8 with selenium installed, [Dockerfile](https://github.com/joyzoursky/docker-python-chromedriver/blob/master/py3/py3.8-selenium/Dockerfile))
+ - `3.8-alpine3.10` (based on python:3.8-alpine3.10, [Dockerfile](https://github.com/joyzoursky/docker-python-chromedriver/blob/master/py3/py3.8-alpine3.10/Dockerfile))
+ - `3.8-alpine3.10-selenium` (based on python:3.8-alpine3.10 with selenium installed, [Dockerfile](https://github.com/joyzoursky/docker-python-chromedriver/blob/master/py3/py3.8-alpine3.10-selenium/Dockerfile))
  - `3.7`, `latest` (based on python:3.7, [Dockerfile](https://github.com/joyzoursky/docker-python-chromedriver/blob/master/py3/py3.7/Dockerfile))
  - `3.7-selenium` (based on python:3.7 with selenium installed, [Dockerfile](https://github.com/joyzoursky/docker-python-chromedriver/blob/master/py3/py3.7-selenium/Dockerfile))
  - `3.7-alpine3.8` (based on python:3.7-alpine3.8, [Dockerfile](https://github.com/joyzoursky/docker-python-chromedriver/blob/master/py3/py3.7-alpine3.8/Dockerfile))
