@@ -51,6 +51,8 @@ $ docker run -it -w /usr/workspace -v $(pwd):/usr/workspace joyzoursky/python-ch
 
 For the following ubuntu based images:
 - `latest`
+- `3.8`
+- `3.8-selenium`
 - `3.7`
 - `3.7-selenium`
 - `3.6`
@@ -70,6 +72,8 @@ $ docker run -it -w /usr/workspace -v $(pwd):/usr/workspace joyzoursky/python-ch
 ```
 
 For the following alpine based images:
+- `3.8-alpine3.10`
+- `3.8-alpine3.10-selenium`
 - `3.7-alpine3.8`
 - `3.7-alpine3.8-selenium`
 - `3.6-alpine3.7`
@@ -91,6 +95,8 @@ This will create a container from the image. Then you could starting running the
 You can download a selenium test example from [here](https://github.com/joyzoursky/docker-python-chromedriver/blob/master/test_script.py) to quick start.
 
 For the following images with selenium pre-installed:
+- `3.8-alpine3.10-selenium`
+- `3.8-selenium`
 - `3.7-alpine3.8-selenium`
 - `3.7-selenium`
 - `3.6-alpine3.7-selenium`
@@ -106,6 +112,8 @@ You may run:
 
 For the following images that do not have selenium pre-installed:
 - `latest`
+- `3.8-alpine3.10`
+- `3.8`
 - `3.7-alpine3.8`
 - `3.7`
 - `3.6-alpine3.7`
