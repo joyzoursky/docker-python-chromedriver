@@ -2,7 +2,7 @@
 
 Python with Chromedriver, for running automated tests
 
-## Quick Try:
+## Quick Try
 
 ```
 $ git clone https://github.com/joyzoursky/docker-python-chromedriver.git
@@ -12,17 +12,16 @@ $ docker run -it -w /usr/workspace -v $(pwd):/usr/workspace joyzoursky/python-ch
 /usr/wrokspace# python test_script.py
 ```
 
-## Includes:
-
- - Python
+## Image includes
+ - Python (Debian or Alpine based)
  - Google Chrome
  - Chromedriver
  - Selenium (in some versions)
  - Xvfb (in some versions)
 
-## Versions:
+## Versions
 
-### Python 3:
+### Python 3
  - `3.8`, `latest` (based on python:3.8, [Dockerfile](https://github.com/joyzoursky/docker-python-chromedriver/blob/master/py3/py3.8/Dockerfile))
  - `3.8-selenium` (based on python:3.8 with selenium installed, [Dockerfile](https://github.com/joyzoursky/docker-python-chromedriver/blob/master/py3/py3.8-selenium/Dockerfile))
  - `3.8-alpine3.10` (based on python:3.8-alpine3.10, [Dockerfile](https://github.com/joyzoursky/docker-python-chromedriver/blob/master/py3/py3.8-alpine3.10/Dockerfile))
@@ -38,7 +37,7 @@ $ docker run -it -w /usr/workspace -v $(pwd):/usr/workspace joyzoursky/python-ch
  - `3.6-xvfb` (based on python:3.6 with xvfb installed, [Dockerfile](https://github.com/joyzoursky/docker-python-chromedriver/blob/master/py3/py3.6-xvfb/Dockerfile))
  - `3.6-xvfb-selenium` (based on python:3.6 with xvfb and selenium installed, [Dockerfile](https://github.com/joyzoursky/docker-python-chromedriver/blob/master/py3/py3.6-xvfb-selenium/Dockerfile))
 
-### Python 2:
+### Python 2 (Deprecated)
 
  - `2.7` (based on python:2.7, [Dockerfile](https://github.com/joyzoursky/docker-python-chromedriver/blob/master/py2/py2.7/Dockerfile))
  - `2.7-selenium` (based on python:2.7 with selenium installed, [Dockerfile](https://github.com/joyzoursky/docker-python-chromedriver/blob/master/py2/py2.7-selenium/Dockerfile))
@@ -47,9 +46,9 @@ $ docker run -it -w /usr/workspace -v $(pwd):/usr/workspace joyzoursky/python-ch
  - `2.7-xvfb` (based on python:2.7 with xvfb installed, [Dockerfile](https://github.com/joyzoursky/docker-python-chromedriver/blob/master/py2/py2.7-xvfb/Dockerfile))
  - `2.7-xvfb-selenium` (based on python:2.7 with xvfb and selenium installed, [Dockerfile](https://github.com/joyzoursky/docker-python-chromedriver/blob/master/py2/py2.7-xvfb-selenium/Dockerfile))
 
-## Usage:
+## Usage
 
-For the following ubuntu based images:
+For the following Debian-based images:
 - `latest`
 - `3.8`
 - `3.8-selenium`
@@ -71,7 +70,7 @@ $ cd [your working directory]
 $ docker run -it -w /usr/workspace -v $(pwd):/usr/workspace joyzoursky/python-chromedriver:[version] bash
 ```
 
-For the following alpine based images:
+For the following Alpine-based images:
 - `3.8-alpine3.10`
 - `3.8-alpine3.10-selenium`
 - `3.7-alpine3.8`
@@ -90,7 +89,7 @@ $ docker run -it -w /usr/workspace -v $(pwd):/usr/workspace joyzoursky/python-ch
 
 This will create a container from the image. Then you could starting running the commands in the container as in your working directory. The followings are some examples to run a selenium test.
 
-## Examples to run selenium test in the container:
+## Examples to run selenium test in the container
 
 You can download a selenium test example from [here](https://github.com/joyzoursky/docker-python-chromedriver/blob/master/test_script.py) to quick start.
 
@@ -154,3 +153,17 @@ Ran 2 tests in 8.684s
 
 OK
 ```
+
+## Contributing
+
+To make changes upon the existing Dockerfiles, you are suggested to edit upon the `Dockerfile.template` files, and generate the new Dockerfiles for different versions by running `render.sh`.
+
+### How to edit and generate new versions of Dockerfiles
+
+1. `cd` to the folder that you want to edit, e.g. `py-debian`
+2. Make changes upon `Dockerfile.template`
+3. On Mac OS, run `bash render.sh` from command line
+
+Note: The `render.sh` is written for Mac OS; If you are using Windows or other OS, some commands may need to be optimised before running.
+
+Thanks a lot for helping on improving this project!
