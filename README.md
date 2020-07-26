@@ -161,8 +161,8 @@ To make changes upon the existing Dockerfiles, you are suggested to edit upon th
 ### How to edit and generate new versions of Dockerfiles
 
 1. `cd` to the folder that you want to edit, e.g. `py-debian`
-2. Make changes upon `Dockerfile.template`
-3. On Mac OS, run `bash render.sh` from command line
+2. Make changes upon `Dockerfile.template` or `Dockerfile-selenium.template`
+3. Run `bash render.sh` from command-line
 
 Note: The `render.sh` is written for Mac OS; If you are using Windows or other OS, some commands may need to be optimised before running.
 
