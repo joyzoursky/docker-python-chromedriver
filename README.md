@@ -21,30 +21,35 @@ $ docker run -it -w /usr/workspace -v $(pwd):/usr/workspace joyzoursky/python-ch
 
 ## Versions
 
-### Python 3
- - `3.8`, `latest` (based on python:3.8, [Dockerfile](https://github.com/joyzoursky/docker-python-chromedriver/blob/master/py3/py3.8/Dockerfile))
- - `3.8-selenium` (based on python:3.8 with selenium installed, [Dockerfile](https://github.com/joyzoursky/docker-python-chromedriver/blob/master/py3/py3.8-selenium/Dockerfile))
- - `3.8-alpine3.10` (based on python:3.8-alpine3.10, [Dockerfile](https://github.com/joyzoursky/docker-python-chromedriver/blob/master/py3/py3.8-alpine3.10/Dockerfile))
- - `3.8-alpine3.10-selenium` (based on python:3.8-alpine3.10 with selenium installed, [Dockerfile](https://github.com/joyzoursky/docker-python-chromedriver/blob/master/py3/py3.8-alpine3.10-selenium/Dockerfile))
- - `3.7`, `latest` (based on python:3.7, [Dockerfile](https://github.com/joyzoursky/docker-python-chromedriver/blob/master/py3/py3.7/Dockerfile))
- - `3.7-selenium` (based on python:3.7 with selenium installed, [Dockerfile](https://github.com/joyzoursky/docker-python-chromedriver/blob/master/py3/py3.7-selenium/Dockerfile))
- - `3.7-alpine3.8` (based on python:3.7-alpine3.8, [Dockerfile](https://github.com/joyzoursky/docker-python-chromedriver/blob/master/py3/py3.7-alpine3.8/Dockerfile))
- - `3.7-alpine3.8-selenium` (based on python:3.7-alpine3.8 with selenium installed, [Dockerfile](https://github.com/joyzoursky/docker-python-chromedriver/blob/master/py3/py3.7-alpine3.8-selenium/Dockerfile))
- - `3.6` (based on python:3.6, [Dockerfile](https://github.com/joyzoursky/docker-python-chromedriver/blob/master/py3/py3.6/Dockerfile))
- - `3.6-selenium` (based on python:3.6 with selenium installed, [Dockerfile](https://github.com/joyzoursky/docker-python-chromedriver/blob/master/py3/py3.6-selenium/Dockerfile))
- - `3.6-alpine3.7` (based on python:3.6-alpine3.7, [Dockerfile](https://github.com/joyzoursky/docker-python-chromedriver/blob/master/py3/py3.6-alpine3.7/Dockerfile))
- - `3.6-alpine3.7-selenium` (based on python:3.6-alpine3.7 with selenium installed, [Dockerfile](https://github.com/joyzoursky/docker-python-chromedriver/blob/master/py3/py3.6-alpine3.7-selenium/Dockerfile))
- - `3.6-xvfb` (based on python:3.6 with xvfb installed, [Dockerfile](https://github.com/joyzoursky/docker-python-chromedriver/blob/master/py3/py3.6-xvfb/Dockerfile))
- - `3.6-xvfb-selenium` (based on python:3.6 with xvfb and selenium installed, [Dockerfile](https://github.com/joyzoursky/docker-python-chromedriver/blob/master/py3/py3.6-xvfb-selenium/Dockerfile))
+### Python 3 (Debian-based)
+ - `3.8`, `latest` (based on python:3.8, [Dockerfile](https://github.com/joyzoursky/docker-python-chromedriver/blob/master/py-debian/3.8/Dockerfile))
+ - `3.8-selenium` (based on python:3.8 with selenium installed, [Dockerfile](https://github.com/joyzoursky/docker-python-chromedriver/blob/master/py-debian/3.8-selenium/Dockerfile))
+ - `3.7` (based on python:3.7, [Dockerfile](https://github.com/joyzoursky/docker-python-chromedriver/blob/master/py-debian/3.7/Dockerfile))
+ - `3.7-selenium` (based on python:3.7 with selenium installed, [Dockerfile](https://github.com/joyzoursky/docker-python-chromedriver/blob/master/py-debian/3.7-selenium/Dockerfile))
+ - `3.6` (based on python:3.6, [Dockerfile](https://github.com/joyzoursky/docker-python-chromedriver/blob/master/py-debian/3.6/Dockerfile))
+ - `3.6-selenium` (based on python:3.6 with selenium installed, [Dockerfile](https://github.com/joyzoursky/docker-python-chromedriver/blob/master/py-debian/3.6-selenium/Dockerfile))
+
+### Python 3 (Alpine-based)
+- `3.8-alpine3.10` (based on python:3.8-alpine3.10, [Dockerfile](https://github.com/joyzoursky/docker-python-chromedriver/blob/master/py-alpine/3.8-alpine3.10/Dockerfile))
+- `3.8-alpine3.10-selenium` (based on python:3.8-alpine3.10 with selenium installed, [Dockerfile](https://github.com/joyzoursky/docker-python-chromedriver/blob/master/py-alpine/3.8-alpine3.10-selenium/Dockerfile))
+- `3.7-alpine3.8` (based on python:3.7-alpine3.8, [Dockerfile](https://github.com/joyzoursky/docker-python-chromedriver/blob/master/py-alpine/3.7-alpine3.8/Dockerfile))
+- `3.7-alpine3.8-selenium` (based on python:3.7-alpine3.8 with selenium installed, [Dockerfile](https://github.com/joyzoursky/docker-python-chromedriver/blob/master/py-alpine/3.7-alpine3.8-selenium/Dockerfile))
+- `3.6-alpine3.7` (based on python:3.6-alpine3.7, [Dockerfile](https://github.com/joyzoursky/docker-python-chromedriver/blob/master/py-alpine/3.6-alpine3.7/Dockerfile))
+- `3.6-alpine3.7-selenium` (based on python:3.6-alpine3.7 with selenium installed, [Dockerfile](https://github.com/joyzoursky/docker-python-chromedriver/blob/master/py-alpine/3.6-alpine3.7-selenium/Dockerfile))
 
 ### Python 2 (Deprecated)
 
- - `2.7` (based on python:2.7, [Dockerfile](https://github.com/joyzoursky/docker-python-chromedriver/blob/master/py2/py2.7/Dockerfile))
- - `2.7-selenium` (based on python:2.7 with selenium installed, [Dockerfile](https://github.com/joyzoursky/docker-python-chromedriver/blob/master/py2/py2.7-selenium/Dockerfile))
- - `2.7-alpine3.7` (based on python:2.7-alpine3.7, [Dockerfile](https://github.com/joyzoursky/docker-python-chromedriver/blob/master/py2/py2.7-alpine3.7/Dockerfile))
- - `2.7-alpine3.7-selenium` (based on python:2.7-alpine3.7 with selenium installed, [Dockerfile](https://github.com/joyzoursky/docker-python-chromedriver/blob/master/py2/py2.7-alpine3.7-selenium/Dockerfile))
- - `2.7-xvfb` (based on python:2.7 with xvfb installed, [Dockerfile](https://github.com/joyzoursky/docker-python-chromedriver/blob/master/py2/py2.7-xvfb/Dockerfile))
- - `2.7-xvfb-selenium` (based on python:2.7 with xvfb and selenium installed, [Dockerfile](https://github.com/joyzoursky/docker-python-chromedriver/blob/master/py2/py2.7-xvfb-selenium/Dockerfile))
+ - `2.7` (based on python:2.7, [Dockerfile](https://github.com/joyzoursky/docker-python-chromedriver/blob/master/deprecated/py2.7/Dockerfile))
+ - `2.7-selenium` (based on python:2.7 with selenium installed, [Dockerfile](https://github.com/joyzoursky/docker-python-chromedriver/blob/master/deprecated/py2.7-selenium/Dockerfile))
+ - `2.7-alpine3.7` (based on python:2.7-alpine3.7, [Dockerfile](https://github.com/joyzoursky/docker-python-chromedriver/blob/master/deprecated/py2.7-alpine3.7/Dockerfile))
+ - `2.7-alpine3.7-selenium` (based on python:2.7-alpine3.7 with selenium installed, [Dockerfile](https://github.com/joyzoursky/docker-python-chromedriver/blob/master/deprecated/py2.7-alpine3.7-selenium/Dockerfile))
+
+### Versions with Xvfb (Deprecated)
+- `3.6-xvfb` (based on python:3.6 with xvfb installed, [Dockerfile](https://github.com/joyzoursky/docker-python-chromedriver/blob/master/deprecated/py3.6-xvfb/Dockerfile))
+- `3.6-xvfb-selenium` (based on python:3.6 with xvfb and selenium installed, [Dockerfile](https://github.com/joyzoursky/docker-python-chromedriver/blob/master/deprecated/py3.6-xvfb-selenium/Dockerfile))
+- `2.7-xvfb` (based on python:2.7 with xvfb installed, [Dockerfile](https://github.com/joyzoursky/docker-python-chromedriver/blob/master/deprecated/py2.7-xvfb/Dockerfile))
+- `2.7-xvfb-selenium` (based on python:2.7 with xvfb and selenium installed, [Dockerfile](https://github.com/joyzoursky/docker-python-chromedriver/blob/master/deprecated/py2.7-xvfb-selenium/Dockerfile))
+
 
 ## Usage
 
