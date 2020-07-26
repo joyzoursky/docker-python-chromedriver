@@ -1,0 +1,9 @@
+FROM python:%%PYTHON_VERSION%%
+
+# update apk repo
+RUN echo "http://dl-4.alpinelinux.org/alpine/v%%ALPINE_VERSION%%/main" >> /etc/apk/repositories && \
+    echo "http://dl-4.alpinelinux.org/alpine/v%%ALPINE_VERSION%%/community" >> /etc/apk/repositories
+
+# install chromedriver
+RUN apk update
+RUN apk add chromium chromium-chromedriver
