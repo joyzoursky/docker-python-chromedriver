@@ -1,6 +1,6 @@
 # docker-python-chromedriver
 
-Python with Chromedriver, for running automated tests
+Python with Chromedriver, for running automated tests..
 
 ## Quick Try
 
@@ -171,4 +171,4 @@ To make changes upon the existing Dockerfiles, you are suggested to edit upon th
 
 Note: The `render.sh` is written for Mac OS; If you are using Windows or other OS, some commands may need to be optimised before running.
 
-Thanks a lot for helping on improving this project!
+Thanks a lot for helping and improving this project!
