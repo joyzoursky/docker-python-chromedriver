@@ -7,7 +7,7 @@ Python with Chromedriver, for running automated tests
 ```
 $ git clone https://github.com/joyzoursky/docker-python-chromedriver.git
 $ cd docker-python-chromedriver
-$ docker run -it -w /usr/workspace -v $(pwd):/usr/workspace joyzoursky/python-chromedriver:3.7 bash
+$ docker run -it -w /usr/workspace -v $(pwd):/usr/workspace joyzoursky/python-chromedriver:latest bash
 /usr/wrokspace# pip install selenium
 /usr/wrokspace# python test_script.py
 ```
@@ -22,7 +22,9 @@ $ docker run -it -w /usr/workspace -v $(pwd):/usr/workspace joyzoursky/python-ch
 ## Versions
 
 ### Python 3 (Debian-based)
- - `3.8`, `latest` (based on python:3.8, [Dockerfile](https://github.com/joyzoursky/docker-python-chromedriver/blob/master/py-debian/3.8/Dockerfile))
+ - `3.9`, `latest` (based on python:3.9, [Dockerfile](https://github.com/joyzoursky/docker-python-chromedriver/blob/master/py-debian/3.9/Dockerfile))
+ - `3.9-selenium` (based on python:3.9 with selenium installed, [Dockerfile](https://github.com/joyzoursky/docker-python-chromedriver/blob/master/py-debian/3.9-selenium/Dockerfile))
+ - `3.8` (based on python:3.8, [Dockerfile](https://github.com/joyzoursky/docker-python-chromedriver/blob/master/py-debian/3.8/Dockerfile))
  - `3.8-selenium` (based on python:3.8 with selenium installed, [Dockerfile](https://github.com/joyzoursky/docker-python-chromedriver/blob/master/py-debian/3.8-selenium/Dockerfile))
  - `3.7` (based on python:3.7, [Dockerfile](https://github.com/joyzoursky/docker-python-chromedriver/blob/master/py-debian/3.7/Dockerfile))
  - `3.7-selenium` (based on python:3.7 with selenium installed, [Dockerfile](https://github.com/joyzoursky/docker-python-chromedriver/blob/master/py-debian/3.7-selenium/Dockerfile))
@@ -30,12 +32,14 @@ $ docker run -it -w /usr/workspace -v $(pwd):/usr/workspace joyzoursky/python-ch
  - `3.6-selenium` (based on python:3.6 with selenium installed, [Dockerfile](https://github.com/joyzoursky/docker-python-chromedriver/blob/master/py-debian/3.6-selenium/Dockerfile))
 
 ### Python 3 (Alpine-based)
-- `3.8-alpine3.10` (based on python:3.8-alpine3.10, [Dockerfile](https://github.com/joyzoursky/docker-python-chromedriver/blob/master/py-alpine/3.8-alpine3.10/Dockerfile))
-- `3.8-alpine3.10-selenium` (based on python:3.8-alpine3.10 with selenium installed, [Dockerfile](https://github.com/joyzoursky/docker-python-chromedriver/blob/master/py-alpine/3.8-alpine3.10-selenium/Dockerfile))
-- `3.7-alpine3.8` (based on python:3.7-alpine3.8, [Dockerfile](https://github.com/joyzoursky/docker-python-chromedriver/blob/master/py-alpine/3.7-alpine3.8/Dockerfile))
-- `3.7-alpine3.8-selenium` (based on python:3.7-alpine3.8 with selenium installed, [Dockerfile](https://github.com/joyzoursky/docker-python-chromedriver/blob/master/py-alpine/3.7-alpine3.8-selenium/Dockerfile))
-- `3.6-alpine3.7` (based on python:3.6-alpine3.7, [Dockerfile](https://github.com/joyzoursky/docker-python-chromedriver/blob/master/py-alpine/3.6-alpine3.7/Dockerfile))
-- `3.6-alpine3.7-selenium` (based on python:3.6-alpine3.7 with selenium installed, [Dockerfile](https://github.com/joyzoursky/docker-python-chromedriver/blob/master/py-alpine/3.6-alpine3.7-selenium/Dockerfile))
+- `3.9-alpine` (based on python:3.9-alpine, [Dockerfile](https://github.com/joyzoursky/docker-python-chromedriver/blob/master/py-alpine/3.8-alpine/Dockerfile))
+- `3.9-alpine-selenium` (based on python:3.9-alpine with selenium installed, [Dockerfile](https://github.com/joyzoursky/docker-python-chromedriver/blob/master/py-alpine/3.8-alpine-selenium/Dockerfile))
+- `3.8-alpine` (based on python:3.8-alpine, [Dockerfile](https://github.com/joyzoursky/docker-python-chromedriver/blob/master/py-alpine/3.8-alpine/Dockerfile))
+- `3.8-alpine-selenium` (based on python:3.8-alpine with selenium installed, [Dockerfile](https://github.com/joyzoursky/docker-python-chromedriver/blob/master/py-alpine/3.8-alpine-selenium/Dockerfile))
+- `3.7-alpine` (based on python:3.7-alpine, [Dockerfile](https://github.com/joyzoursky/docker-python-chromedriver/blob/master/py-alpine/3.7-alpine/Dockerfile))
+- `3.7-alpine-selenium` (based on python:3.7-alpine3.8 with selenium installed, [Dockerfile](https://github.com/joyzoursky/docker-python-chromedriver/blob/master/py-alpine/3.7-alpine-selenium/Dockerfile))
+- `3.6-alpine` (based on python:3.6-alpine, [Dockerfile](https://github.com/joyzoursky/docker-python-chromedriver/blob/master/py-alpine/3.6-alpine/Dockerfile))
+- `3.6-alpine-selenium` (based on python:3.6-alpine with selenium installed, [Dockerfile](https://github.com/joyzoursky/docker-python-chromedriver/blob/master/py-alpine/3.6-alpin-selenium/Dockerfile))
 
 ### Python 2 (Deprecated)
 
@@ -55,6 +59,8 @@ $ docker run -it -w /usr/workspace -v $(pwd):/usr/workspace joyzoursky/python-ch
 
 For the following Debian-based images:
 - `latest`
+- `3.9`
+- `3.9-selenium`
 - `3.8`
 - `3.8-selenium`
 - `3.7`
@@ -76,14 +82,16 @@ $ docker run -it -w /usr/workspace -v $(pwd):/usr/workspace joyzoursky/python-ch
 ```
 
 For the following Alpine-based images:
-- `3.8-alpine3.10`
-- `3.8-alpine3.10-selenium`
-- `3.7-alpine3.8`
-- `3.7-alpine3.8-selenium`
-- `3.6-alpine3.7`
-- `3.6-alpine3.7-selenium`
-- `2.7-alpine3.7`
-- `2.7-alpine3.7-selenium`
+- `3.9-alpine`
+- `3.9-alpine-selenium`
+- `3.8-alpine`
+- `3.8-alpine-selenium`
+- `3.7-alpine`
+- `3.7-alpine-selenium`
+- `3.6-alpine`
+- `3.6-alpine-selenium`
+- `2.7-alpine`
+- `2.7-alpine-selenium`
 
 Run the followings in your terminal:
 
@@ -99,13 +107,15 @@ This will create a container from the image. Then you could starting running the
 You can download a selenium test example from [here](https://github.com/joyzoursky/docker-python-chromedriver/blob/master/test_script.py) to quick start.
 
 For the following images with selenium pre-installed:
-- `3.8-alpine3.10-selenium`
+- `3.9-alpine-selenium`
+- `3.9-selenium`
+- `3.8-alpine-selenium`
 - `3.8-selenium`
-- `3.7-alpine3.8-selenium`
+- `3.7-alpine-selenium`
 - `3.7-selenium`
-- `3.6-alpine3.7-selenium`
+- `3.6-alpine-selenium`
 - `3.6-selenium`
-- `2.7-alpine3.7-selenium`
+- `2.7-alpine-selenium`
 - `2.7-selenium`
 
 You may run:
@@ -116,13 +126,15 @@ You may run:
 
 For the following images that do not have selenium pre-installed:
 - `latest`
-- `3.8-alpine3.10`
+- `3.9-alpine`
+- `3.9`
+- `3.8-alpine`
 - `3.8`
-- `3.7-alpine3.8`
+- `3.7-alpine`
 - `3.7`
-- `3.6-alpine3.7`
+- `3.6-alpine`
 - `3.6`
-- `2.7-alpine3.7`
+- `2.7-alpine`
 - `2.7`
 
 You may run:
@@ -149,12 +161,12 @@ Then you should see the test result like this:
 
 ```
 test_case_1 (__main__.TestTemplate)
-Find and click top-right button ... ok
+Find and click top-left logo button ... ok
 test_case_2 (__main__.TestTemplate)
-Find and click Learn more button ... ok
+Find and click top-right Start your project button ... ok
 
 ----------------------------------------------------------------------
-Ran 2 tests in 8.684s
+Ran 2 tests in 11.852s
 
 OK
 ```
