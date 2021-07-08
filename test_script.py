@@ -15,7 +15,8 @@ class TestTemplate(unittest.TestCase):
         chrome_options.add_argument('--no-sandbox')
         chrome_options.add_argument('--headless')
         chrome_options.add_argument('--disable-gpu')
-        self.driver = webdriver.Chrome(chrome_options=chrome_options)
+        chrome_options.add_argument("--window-size=1920,1080")
+        self.driver = webdriver.Chrome(options=chrome_options)
         self.driver.implicitly_wait(10)
 
     def tearDown(self):
@@ -23,19 +24,19 @@ class TestTemplate(unittest.TestCase):
         self.driver.quit()
 
     def test_case_1(self):
-        """Find and click top-right button"""
+        """Find and click top-left logo button"""
         try:
             self.driver.get('https://www.oursky.com/')
-            el = self.driver.find_element_by_class_name('btn-header')
+            el = self.driver.find_element_by_class_name('header__logo')
             el.click()
         except NoSuchElementException as ex:
             self.fail(ex.msg)
 
     def test_case_2(self):
-        """Find and click Learn more button"""
+        """Find and click top-right Start your project button"""
         try:
             self.driver.get('https://www.oursky.com/')
-            el = self.driver.find_element_by_xpath(".//*[@id='tag-line-wrap']/span/a")
+            el = self.driver.find_element_by_class_name("header__cta")
             el.click()
         except NoSuchElementException as ex:
             self.fail(ex.msg)
