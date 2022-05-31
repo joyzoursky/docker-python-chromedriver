@@ -12,6 +12,8 @@ $ docker run -it -w /usr/workspace -v $(pwd):/usr/workspace joyzoursky/python-ch
 /usr/wrokspace# python test_script.py
 ```
 
+> Warning: Current versions only support for building and running on amd64 (aka x86-64) machines, for arm64 (e.g. Apple M1 chip) machines, sevaral issues are found to be blocking (ref https://github.com/joyzoursky/docker-python-chromedriver/issues/31 https://github.com/joyzoursky/docker-python-chromedriver/issues/30).
+
 ## Image includes
  - Python (Debian or Alpine based)
  - Google Chrome
