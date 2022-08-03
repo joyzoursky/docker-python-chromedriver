@@ -5,6 +5,7 @@ A simple selenium test example written by python
 import unittest
 from selenium import webdriver
 from selenium.common.exceptions import NoSuchElementException
+from selenium.webdriver.common.by import By
 
 class TestTemplate(unittest.TestCase):
     """Include test cases on a given url"""
@@ -28,7 +29,7 @@ class TestTemplate(unittest.TestCase):
         """Find and click top-left logo button"""
         try:
             self.driver.get('https://www.oursky.com/')
-            el = self.driver.find_element_by_class_name('header__logo')
+            el = self.driver.find_element(By.CLASS_NAME, 'header__logo')
             el.click()
         except NoSuchElementException as ex:
             self.fail(ex.msg)
@@ -37,7 +38,7 @@ class TestTemplate(unittest.TestCase):
         """Find and click top-right Start your project button"""
         try:
             self.driver.get('https://www.oursky.com/')
-            el = self.driver.find_element_by_class_name("header__cta")
+            el = self.driver.find_element(By.CLASS_NAME, "header__cta")
             el.click()
         except NoSuchElementException as ex:
             self.fail(ex.msg)
