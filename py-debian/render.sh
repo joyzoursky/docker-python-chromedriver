@@ -8,7 +8,7 @@ sedStr="
 sed -E "$sedStr" $1
 }
 
-python_versions=(3.6 3.7 3.8 3.9)
+python_versions=(3.6 3.7 3.8 3.9 3.10 3.11)
 
 for python_version in ${python_versions[*]}; do
   version=$python_version
