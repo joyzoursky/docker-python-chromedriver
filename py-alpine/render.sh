@@ -9,7 +9,7 @@ sedStr="
 sed -E "$sedStr" $1
 }
 
-python_versions=(3.6-alpine 3.7-alpine 3.8-alpine 3.9-alpine)
+python_versions=(3.6-alpine 3.7-alpine 3.8-alpine 3.9-alpine 3.10-alpine 3.11-alpine)
 alpine_version=3.14
 
 for i in ${!python_versions[@]}; do
