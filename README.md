@@ -8,8 +8,8 @@ Python with Chromedriver, for running automated tests
 $ git clone https://github.com/joyzoursky/docker-python-chromedriver.git
 $ cd docker-python-chromedriver
 $ docker run -it -w /usr/workspace -v $(pwd):/usr/workspace joyzoursky/python-chromedriver:latest bash
-/usr/wrokspace# pip install selenium
-/usr/wrokspace# python test_script.py
+/usr/workspace# pip install selenium
+/usr/workspace# python test_script.py
 ```
 
 > Warning: Current versions only support for building and running on amd64 (aka x86-64) machines, for arm64 (e.g. Apple M1 chip) machines, sevaral issues are found to be blocking (ref https://github.com/joyzoursky/docker-python-chromedriver/issues/31 https://github.com/joyzoursky/docker-python-chromedriver/issues/30).
